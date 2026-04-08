@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Lamp</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="off">
+
+    <!-- TOP HEADING -->
+    <div id="text">
+        <h2>This is a lamp that blows your mind.....! 💡</h2>
+    </div>
+
+    <!-- CARD -->
+    <div class="card">
+        <svg class="lamp" id="lamp" width="140" height="260" viewBox="0 0 140 260"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <circle class="glow-ring" id="glow" cx="70" cy="130" r="0" fill="#ffe97a" opacity="0" />
+
+            <line x1="70" y1="0" x2="70" y2="40" stroke="#ccc6e8" stroke-width="2.5"
+                stroke-linecap="round" />
+
+            <path d="M38 100 Q42 60 70 50 Q98 60 102 100Z" fill="#ddd5f5" />
+
+            <ellipse id="bulb" class="bulb-off" cx="70" cy="130" rx="16" ry="20" />
+        </svg>
+
+        <div id="buttonstyle">
+            <button class="btn off" id="btn"></button>
+            <span class="label" id="lbl">Off</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
